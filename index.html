@@ -4,31 +4,39 @@
     </head>
     <body>
         <h1>Border Radius Previewer</h1>
-        <div>
+        <div class="flex-space-around">
             <div id="box"></div>
+        </div>
+        <div class="flex-space-around" style="margin-top: .5rem;">
             <div>
                 <label for="top-left-border">Top left border</label>
-                <input type="text" id="top-left-border">
+                <input type="text" id="top-left-border" class="radius">
             </div>
+            <div style="padding-left: 2rem;">
+                <input type="text" id="top-right-border" class="radius">
+                <label for="top-right-border">Top right border</label>
+            </div>                
+        </div>
+        <div class="flex-space-around" style="margin-top: .5rem;">
             <div>
                 <label for="bottom-left-border">Bottom left border</label>
-                <input type="text" id="bottom-left-border">
-            </div>
-            <div>
-                <label for="top-right-border">Top right border</label>
-                <input type="text" id="top-right-border">
-            </div>
-            <div>
+                <input type="text" id="bottom-left-border" class="radius">
+            </div>            
+            <div style="padding-left: 2rem;">
+                <input type="text" id="bottom-right-border" class="radius">
                 <label for="bottom-right-border">Bottom right border</label>
-                <input type="text" id="bottom-right-border">
+            </div>                
+        </div>
+        <div class="flex-center" style="margin-top: .5rem;">
+            <button onclick="apply()" style="cursor: pointer;">Apply</button>
+            <button style="margin-left: 3rem; cursor: pointer;" onclick="reset()">Reset</button>
+        </div>
+        <div class="flex-space-around">
+            <div>
+                <h3>CSS generated</h3>
             </div>
         </div>
-        <button onclick="apply()">Apply</button>
-        <button onclick="reset()">Reset</button>
-        <div id="div-css" class="display-none">
-            <label for="css-generated">CSS generated</label>
-            <input type="text" id="css-generated">
-        </div>
+        <input type="text" id="css-generated">
         <script src="./border-previewer.js"></script>
     </body>
 </html>

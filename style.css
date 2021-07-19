@@ -1,3 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+.flex-space-around {
+    display: flex; 
+    justify-content: center;
+}
+
+.flex-center {
+    display: flex; 
+    justify-content: center;
+}
+
+.radius {
+    width: 40px;
+}
+
 #box {
     border: 1px solid black; 
     height: 50px; 
@@ -5,16 +23,9 @@
     margin-bottom: 3rem;
 }
 
-.display-none {
-    display: none;
-}
-
-.display-block {
-    display: block;
-}
-
 #css-generated {
     border-width: 0;
     outline: none;
     width: 100%;
+    text-align: center;
 }
