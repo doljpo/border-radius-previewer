@@ -6,6 +6,10 @@ h1 {
     text-align: center;
 }
 
+input {
+    min-width: 50px;
+}
+
 .flex-space-around {
     display: flex; 
     justify-content: center;
